@@ -1,0 +1,43 @@
+# ============================================================
+#  Pixora API — systemd unit
+#  Положить в /etc/systemd/system/pixora-api.service
+# ============================================================
+
+[Unit]
+Description=Pixora auth API (Node.js)
+Documentation=https://github.com/your-user/your-repo
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pixora
+Group=pixora
+WorkingDirectory=/var/www/pixora/server
+EnvironmentFile=/var/www/pixora/server/.env
+ExecStart=/usr/bin/node src/index.js
+
+Restart=always
+RestartSec=3
+KillSignal=SIGTERM
+TimeoutStopSec=15
+
+# Ограничения безопасности
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+# Единственная папка, куда сервису разрешено писать:
+ReadWritePaths=/var/www/pixora/server/data
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pixora-api
+
+[Install]
+WantedBy=multi-user.target

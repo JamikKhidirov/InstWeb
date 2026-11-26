@@ -1,0 +1,33 @@
+# зависимости
+node_modules/
+.pnpm-store/
+
+# сборка
+dist/
+build/
+*.local
+
+# секреты и данные
+.env
+.env.*
+!.env.example
+server/data/*.json
+server/data/*.tmp
+!server/data/.gitkeep
+
+# логи
+*.log
+npm-debug.log*
+logs/
+
+# редакторы / ОС
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# кэш
+.cache/
+coverage/

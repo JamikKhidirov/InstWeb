@@ -1,0 +1,24 @@
+{
+  "name": "pixora-auth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Страница входа в стиле Instagram под собственным брендом: React + Express + Telegram-уведомления",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm --workspace server run dev",
+    "dev:web": "npm --workspace client run dev",
+    "build": "npm --workspace client run build",
+    "start": "npm --workspace server run start",
+    "user:add": "npm --workspace server run user:add --"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
