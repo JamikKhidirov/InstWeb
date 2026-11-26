@@ -226,6 +226,7 @@ npm start
 | [docs/07-github.md](docs/07-github.md) | Публикация в GitHub без утечки секретов |
 | [docs/08-vps-full-guide.md](docs/08-vps-full-guide.md) | **Полный гайд по VPS:** от покупки сервера до HTTPS, обновлений и бэкапов |
 | [docs/09-animated-architecture.md](docs/09-animated-architecture.md) | **Анимированная документация:** SVG-шапка, Mermaid-схемы архитектуры, последовательностей и деплоя |
+| [docs/10-data-flow-by-files.md](docs/10-data-flow-by-files.md) | **Разбор по файлам:** где читаются поля, куда уходят данные и в каком файле отправляется Telegram |
 
 ---
 

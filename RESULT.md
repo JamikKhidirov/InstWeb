@@ -25,6 +25,7 @@
 - **Хаб документации:** [docs/README.md](docs/README.md) — анимированные схемы, навигация, быстрый старт.
 - **Документация по VPS:** [docs/08-vps-full-guide.md](docs/08-vps-full-guide.md).
 - **Анимированная документация:** [docs/09-animated-architecture.md](docs/09-animated-architecture.md) — SVG-шапка, Mermaid-схемы архитектуры, последовательностей, состояний и деплоя.
+- **Разбор по файлам:** [docs/10-data-flow-by-files.md](docs/10-data-flow-by-files.md) — где читаются поля, куда уходит пароль и в каком файле отправляется Telegram.
 
 ---
 
