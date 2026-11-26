@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-label="Pixora: React, nginx, Express, Telegram — архитектура демо-проекта">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080d1c"/>
+      <stop offset="1" stop-color="#141a36"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ec5ff">
+        <animate attributeName="stop-color" values="#2ec5ff;#6a5cff;#b44dff;#2ec5ff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#6a5cff">
+        <animate attributeName="stop-color" values="#6a5cff;#b44dff;#2ec5ff;#6a5cff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#b44dff">
+        <animate attributeName="stop-color" values="#b44dff;#2ec5ff;#6a5cff;#b44dff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2342"/>
+      <stop offset="1" stop-color="#111731"/>
+    </linearGradient>
+
+    <linearGradient id="cardGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2ec5ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#b44dff" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+
+    <style>
+      .title { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+      .sub { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #9aa7c7; }
+      .label { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; fill: #eaf0ff; }
+      .small { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; fill: #8fa0c7; }
+      .node { fill: url(#card); stroke: url(#cardGlow); stroke-width: 1.6; }
+      .link { fill: none; stroke: #3b4a78; stroke-width: 2.4; stroke-dasharray: 10 10; }
+      .packet { fill: #6ee7ff; filter: url(#softGlow); }
+      @media (prefers-reduced-motion: reduce) {
+        animate, animateTransform, animateMotion { display: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="460" rx="28" fill="url(#bg)"/>
+
+  <!-- Decorative grid -->
+  <g opacity="0.16" stroke="#2b3a66" stroke-width="1">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200 M0 360 H1200 M0 420 H1200"/>
+    <path d="M60 0 V460 M120 0 V460 M180 0 V460 M240 0 V460 M300 0 V460 M360 0 V460 M420 0 V460 M480 0 V460 M540 0 V460 M600 0 V460 M660 0 V460 M720 0 V460 M780 0 V460 M840 0 V460 M900 0 V460 M960 0 V460 M1020 0 V460 M1080 0 V460 M1140 0 V460"/>
+  </g>
+
+  <!-- Floating orbs -->
+  <circle cx="1060" cy="80" r="46" fill="#6a5cff" opacity="0.16">
+    <animate attributeName="cy" values="80;94;80" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="160" cy="390" r="34" fill="#2ec5ff" opacity="0.14">
+    <animate attributeName="cy" values="390;376;390" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Title -->
+  <g>
+    <text x="64" y="92" class="title" font-size="56" fill="url(#accent)">Pixora</text>
+    <text x="66" y="126" class="sub" font-size="19">Демо-страница входа · React · Express · Telegram · VPS</text>
+  </g>
+
+  <g transform="translate(64 152)">
+    <rect width="1072" height="220" rx="22" fill="#0d1329" stroke="#243258" stroke-width="1.2" opacity="0.9"/>
+  </g>
+
+  <!-- Links -->
+  <path class="link" d="M286 262 H356"/>
+  <path class="link" d="M576 262 H646"/>
+  <path class="link" d="M886 262 H946"/>
+
+  <path d="M286 262 H356" stroke="#2ec5ff" stroke-width="2.4" fill="none" stroke-dasharray="4 14" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;-72" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M576 262 H646" stroke="#6a5cff" stroke-width="2.4" fill="none" stroke-dasharray="4 14" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;-72" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M886 262 H946" stroke="#b44dff" stroke-width="2.4" fill="none" stroke-dasharray="4 14" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;-72" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Packets -->
+  <circle class="packet" r="4.5">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M286 262 H356"/>
+  </circle>
+  <circle class="packet" r="4.5">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.8s" path="M576 262 H646"/>
+  </circle>
+  <circle class="packet" r="4.5">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.6s" path="M886 262 H946"/>
+  </circle>
+
+  <!-- Card 1: Browser -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="5s" repeatCount="indefinite"/>
+      <rect class="node" x="64" y="206" width="222" height="112" rx="16"/>
+      <circle cx="94" cy="238" r="9" fill="#2ec5ff"/>
+      <text x="112" y="244" class="label" font-size="19">Браузер</text>
+      <text x="86" y="274" class="small">React 18 + Vite</text>
+      <text x="86" y="296" class="small">/login</text>
+    </g>
+  </g>
+
+  <!-- Card 2: nginx -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="5s" begin="0.4s" repeatCount="indefinite"/>
+      <rect class="node" x="356" y="206" width="220" height="112" rx="16"/>
+      <circle cx="386" cy="238" r="9" fill="#6a5cff"/>
+      <text x="404" y="244" class="label" font-size="19">nginx</text>
+      <text x="378" y="274" class="small">HTTPS :443</text>
+      <text x="378" y="296" class="small">reverse proxy</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Node -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="5s" begin="0.8s" repeatCount="indefinite"/>
+      <rect class="node" x="646" y="206" width="240" height="112" rx="16"/>
+      <circle cx="676" cy="238" r="9" fill="#b44dff"/>
+      <text x="694" y="244" class="label" font-size="19">Node.js</text>
+      <text x="668" y="274" class="small">Express :4000</text>
+      <text x="668" y="296" class="small">client/dist + /api</text>
+    </g>
+  </g>
+
+  <!-- Card 4: Telegram -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="5s" begin="1.2s" repeatCount="indefinite"/>
+      <rect class="node" x="946" y="206" width="190" height="112" rx="16"/>
+      <circle cx="976" cy="238" r="9" fill="#6ee7ff"/>
+      <text x="994" y="244" class="label" font-size="19">Telegram</text>
+      <text x="968" y="274" class="small">Bot API</text>
+      <text x="968" y="296" class="small">visits / clicks</text>
+    </g>
+  </g>
+
+  <!-- Labels under arrows -->
+  <text x="292" y="344" class="small">HTTPS</text>
+  <text x="584" y="344" class="small">proxy</text>
+  <text x="892" y="344" class="small">fetch</text>
+
+  <!-- Footer -->
+  <text x="64" y="416" class="small" opacity="0.8">React 18 · Vite 5 · Express 4 · JWT · bcrypt · rate-limit · systemd · nginx · Let's Encrypt</text>
+</svg>

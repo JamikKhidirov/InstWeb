@@ -201,6 +201,7 @@ npm start
 | [docs/06-security.md](docs/06-security.md) | Что храним, что нет, чек-лист безопасности |
 | [docs/07-github.md](docs/07-github.md) | Публикация в GitHub без утечки секретов |
 | [docs/08-vps-full-guide.md](docs/08-vps-full-guide.md) | **Полный гайд по VPS:** от покупки сервера до HTTPS, обновлений и бэкапов |
+| [docs/09-animated-architecture.md](docs/09-animated-architecture.md) | **Анимированная документация:** SVG-шапка, Mermaid-схемы архитектуры, последовательностей и деплоя |
 
 ---
 
