@@ -1,5 +1,7 @@
 # 05. Диагностика: симптом → причина → решение
 
+<p align="center"><img src="assets/divider-animated.svg" alt="" width="100%"></p>
+
 Сначала определите, где проблема:
 
 ```bash

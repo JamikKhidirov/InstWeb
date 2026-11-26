@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Пайплайн деплоя Pixora на VPS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080d1c"/>
+      <stop offset="1" stop-color="#141a36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ec5ff">
+        <animate attributeName="stop-color" values="#2ec5ff;#6a5cff;#b44dff;#2ec5ff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#6a5cff">
+        <animate attributeName="stop-color" values="#6a5cff;#b44dff;#2ec5ff;#6a5cff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#b44dff">
+        <animate attributeName="stop-color" values="#b44dff;#2ec5ff;#6a5cff;#b44dff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2342"/>
+      <stop offset="1" stop-color="#111731"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ec5ff"/>
+      <stop offset="0.5" stop-color="#6a5cff"/>
+      <stop offset="1" stop-color="#b44dff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .t { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #eaf0ff; }
+      .s { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #9aa7c7; }
+      .m { font-family: 'Consolas', 'Courier New', monospace; fill: #8fa0c7; }
+      .node { fill: url(#card); stroke: #2b3a66; stroke-width: 1.5; }
+      @media (prefers-reduced-motion: reduce) {
+        animate, animateTransform, animateMotion { display: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="26" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#2b3a66" stroke-width="1">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200"/>
+    <path d="M60 0 V360 M120 0 V360 M180 0 V360 M240 0 V360 M300 0 V360 M360 0 V360 M420 0 V360 M480 0 V360 M540 0 V360 M600 0 V360 M660 0 V360 M720 0 V360 M780 0 V360 M840 0 V360 M900 0 V360 M960 0 V360 M1020 0 V360 M1080 0 V360 M1140 0 V360"/>
+  </g>
+
+  <text x="56" y="72" class="t" font-size="34" fill="url(#accent)">Deploy pipeline</text>
+  <text x="58" y="102" class="s" font-size="17">Git → VPS → build → systemd → nginx → HTTPS</text>
+
+  <!-- Edges -->
+  <path d="M250 210 H286" stroke="url(#edge)" stroke-width="2.4" fill="none" stroke-dasharray="6 10">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M466 210 H502" stroke="url(#edge)" stroke-width="2.4" fill="none" stroke-dasharray="6 10">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M682 210 H718" stroke="url(#edge)" stroke-width="2.4" fill="none" stroke-dasharray="6 10">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M898 210 H934" stroke="url(#edge)" stroke-width="2.4" fill="none" stroke-dasharray="6 10">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+
+  <circle r="4" fill="#6ee7ff" filter="url(#glow)">
+    <animateMotion dur="2s" repeatCount="indefinite" path="M250 210 H286"/>
+  </circle>
+  <circle r="4" fill="#6ee7ff" filter="url(#glow)">
+    <animateMotion dur="2s" repeatCount="indefinite" begin="0.5s" path="M466 210 H502"/>
+  </circle>
+  <circle r="4" fill="#6ee7ff" filter="url(#glow)">
+    <animateMotion dur="2s" repeatCount="indefinite" begin="1s" path="M682 210 H718"/>
+  </circle>
+  <circle r="4" fill="#6ee7ff" filter="url(#glow)">
+    <animateMotion dur="2s" repeatCount="indefinite" begin="1.5s" path="M898 210 H934"/>
+  </circle>
+
+  <!-- Nodes -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="4.5s" repeatCount="indefinite"/>
+      <rect class="node" x="70" y="160" width="180" height="100" rx="14"/>
+      <text x="94" y="198" class="t" font-size="17">① Git push</text>
+      <text x="94" y="224" class="m" font-size="13">main branch</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="4.5s" begin="0.3s" repeatCount="indefinite"/>
+      <rect class="node" x="286" y="160" width="180" height="100" rx="14"/>
+      <text x="310" y="198" class="t" font-size="17">② VPS</text>
+      <text x="310" y="224" class="m" font-size="13">git clone</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="4.5s" begin="0.6s" repeatCount="indefinite"/>
+      <rect class="node" x="502" y="160" width="180" height="100" rx="14"/>
+      <text x="526" y="198" class="t" font-size="17">③ Build</text>
+      <text x="526" y="224" class="m" font-size="13">npm ci &amp;&amp; build</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="4.5s" begin="0.9s" repeatCount="indefinite"/>
+      <rect class="node" x="718" y="160" width="180" height="100" rx="14"/>
+      <text x="742" y="198" class="t" font-size="17">④ systemd</text>
+      <text x="742" y="224" class="m" font-size="13">:4000 + nginx</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="4.5s" begin="1.2s" repeatCount="indefinite"/>
+      <rect x="934" y="160" width="196" height="100" rx="14" fill="#0e2a1d" stroke="#22c55e" stroke-width="1.8"/>
+      <text x="958" y="198" class="t" font-size="17">⑤ HTTPS live</text>
+      <text x="958" y="224" class="m" font-size="13">Let's Encrypt</text>
+      <circle cx="1104" cy="180" r="5" fill="#22c55e" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <text x="70" y="320" class="m" font-size="13" opacity="0.85">≈ 40 минут · Ubuntu 24.04 · Node.js 22 · nginx · certbot · ufw</text>
+</svg>

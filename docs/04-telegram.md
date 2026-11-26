@@ -1,5 +1,7 @@
 # 04. Telegram: бот и уведомления
 
+<p align="center"><img src="assets/divider-animated.svg" alt="" width="100%"></p>
+
 Проект отправляет в Telegram красивое HTML-сообщение о **регистрации** и **входе**. Пароль в сообщение не попадает никогда.
 
 ---

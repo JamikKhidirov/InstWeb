@@ -1,5 +1,7 @@
 # 01. Локальный запуск
 
+<p align="center"><img src="assets/divider-animated.svg" alt="" width="100%"></p>
+
 Пошагово, с нуля, для Windows, macOS и Linux.
 
 ---

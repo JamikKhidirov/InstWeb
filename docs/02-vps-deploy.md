@@ -1,5 +1,7 @@
 # 02. Деплой на VPS (Ubuntu 24.04)
 
+<p align="center"><img src="assets/divider-animated.svg" alt="" width="100%"></p>
+
 Инструкция «с нуля»: от пустого сервера до работающего сайта по IP.
 Домен и HTTPS — в следующем файле: [03-domain-https.md](03-domain-https.md).
 

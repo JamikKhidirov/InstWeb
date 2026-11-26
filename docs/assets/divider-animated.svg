@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" role="img" aria-label="Анимированный разделитель">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ec5ff">
+        <animate attributeName="stop-color" values="#2ec5ff;#6a5cff;#b44dff;#2ec5ff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#6a5cff">
+        <animate attributeName="stop-color" values="#6a5cff;#b44dff;#2ec5ff;#6a5cff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#b44dff">
+        <animate attributeName="stop-color" values="#b44dff;#2ec5ff;#6a5cff;#b44dff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        animate, animateMotion { display: none; }
+      }
+    </style>
+  </defs>
+
+  <line x1="60" y1="14" x2="1140" y2="14" stroke="url(#line)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 10" opacity="0.85">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.8s" repeatCount="indefinite"/>
+  </line>
+
+  <circle r="4" fill="#6ee7ff" filter="url(#glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M60 14 H1140"/>
+  </circle>
+
+  <path d="M60 8 L66 14 L60 20 L54 14 Z" fill="#2ec5ff" filter="url(#glow)"/>
+  <path d="M1140 8 L1146 14 L1140 20 L1134 14 Z" fill="#b44dff" filter="url(#glow)"/>
+</svg>

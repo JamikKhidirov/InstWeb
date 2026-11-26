@@ -1,5 +1,7 @@
 # 03. Домен и HTTPS
 
+<p align="center"><img src="assets/divider-animated.svg" alt="" width="100%"></p>
+
 Итог этого файла: сайт открывается по `https://ваш-домен.ru/login`, сертификат продлевается сам.
 
 Предполагается, что VPS уже настроен по [02-vps-deploy.md](02-vps-deploy.md) и сайт открывается по IP.

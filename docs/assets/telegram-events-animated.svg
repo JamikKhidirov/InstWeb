@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="События Pixora в Telegram: визит, клик, вход">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080d1c"/>
+      <stop offset="1" stop-color="#141a36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ec5ff">
+        <animate attributeName="stop-color" values="#2ec5ff;#6a5cff;#b44dff;#2ec5ff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#6a5cff">
+        <animate attributeName="stop-color" values="#6a5cff;#b44dff;#2ec5ff;#6a5cff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#b44dff">
+        <animate attributeName="stop-color" values="#b44dff;#2ec5ff;#6a5cff;#b44dff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2342"/>
+      <stop offset="1" stop-color="#111731"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ec5ff"/>
+      <stop offset="0.5" stop-color="#6a5cff"/>
+      <stop offset="1" stop-color="#b44dff"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f2b52"/>
+      <stop offset="1" stop-color="#172040"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .t { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #eaf0ff; }
+      .s { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #9aa7c7; }
+      .m { font-family: 'Consolas', 'Courier New', monospace; fill: #8fa0c7; }
+      .node { fill: url(#card); stroke: #2b3a66; stroke-width: 1.5; }
+      .msg { fill: url(#bubble); stroke: #2b3a66; stroke-width: 1.2; }
+      @media (prefers-reduced-motion: reduce) {
+        animate, animateTransform, animateMotion { display: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="440" rx="26" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#2b3a66" stroke-width="1">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200 M0 360 H1200"/>
+    <path d="M60 0 V440 M120 0 V440 M180 0 V440 M240 0 V440 M300 0 V440 M360 0 V440 M420 0 V440 M480 0 V440 M540 0 V440 M600 0 V440 M660 0 V440 M720 0 V440 M780 0 V440 M840 0 V440 M900 0 V440 M960 0 V440 M1020 0 V440 M1080 0 V440 M1140 0 V440"/>
+  </g>
+
+  <text x="56" y="72" class="t" font-size="34" fill="url(#accent)">Telegram events</text>
+  <text x="58" y="102" class="s" font-size="17">визит · клик · вход — без паролей и значений полей</text>
+
+  <!-- Arrows -->
+  <path d="M336 250 H406" stroke="url(#edge)" stroke-width="2.6" fill="none" stroke-dasharray="6 10">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M646 250 H716" stroke="url(#edge)" stroke-width="2.6" fill="none" stroke-dasharray="6 10">
+    <animate attributeName="stroke-dashoffset" values="0;-64" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+
+  <circle r="4.5" fill="#6ee7ff" filter="url(#glow)">
+    <animateMotion dur="1.8s" repeatCount="indefinite" path="M336 250 H406"/>
+  </circle>
+  <circle r="4.5" fill="#6ee7ff" filter="url(#glow)">
+    <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.9s" path="M646 250 H716"/>
+  </circle>
+
+  <!-- Browser card -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="5s" repeatCount="indefinite"/>
+      <rect class="node" x="66" y="160" width="270" height="180" rx="16"/>
+      <circle cx="96" cy="194" r="9" fill="#2ec5ff"/>
+      <text x="114" y="200" class="t" font-size="19">Браузер</text>
+      <text x="90" y="232" class="m" font-size="13">React 18 + Vite</text>
+      <rect x="90" y="250" width="222" height="34" rx="8" fill="#0c1226" stroke="#243258"/>
+      <text x="104" y="272" class="m" font-size="13">/login</text>
+      <rect x="90" y="294" width="100" height="28" rx="7" fill="#12324a" stroke="#2ec5ff" opacity="0.8"/>
+      <text x="106" y="313" class="m" font-size="12">trackEvent</text>
+    </g>
+  </g>
+
+  <!-- Express card -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="5s" begin="0.4s" repeatCount="indefinite"/>
+      <rect class="node" x="406" y="160" width="240" height="180" rx="16"/>
+      <circle cx="436" cy="194" r="9" fill="#6a5cff"/>
+      <text x="454" y="200" class="t" font-size="19">Express</text>
+      <text x="430" y="232" class="m" font-size="13">POST /api/events</text>
+      <rect x="430" y="250" width="192" height="30" rx="7" fill="#0c1226" stroke="#243258"/>
+      <text x="444" y="270" class="m" font-size="12">type · label · path</text>
+      <text x="430" y="310" class="m" font-size="12" fill="#6ee7ff">no password ✕</text>
+    </g>
+  </g>
+
+  <!-- Telegram chat card -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="5s" begin="0.8s" repeatCount="indefinite"/>
+      <rect class="node" x="716" y="130" width="418" height="240" rx="18"/>
+      <circle cx="748" cy="164" r="9" fill="#6ee7ff"/>
+      <text x="766" y="170" class="t" font-size="19">Telegram</text>
+      <text x="742" y="196" class="m" font-size="12">@your_bot · Bot API</text>
+
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.82;1" dur="9s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 8;0 0;0 0;0 8" keyTimes="0;0.12;0.82;1" dur="9s" repeatCount="indefinite"/>
+        <rect class="msg" x="742" y="214" width="360" height="38" rx="9"/>
+        <text x="758" y="238" class="s" font-size="13" fill="#eaf0ff">👀 Открыта страница · /login</text>
+      </g>
+
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.82;1" dur="9s" begin="3s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 8;0 0;0 0;0 8" keyTimes="0;0.12;0.82;1" dur="9s" begin="3s" repeatCount="indefinite"/>
+        <rect class="msg" x="742" y="262" width="360" height="38" rx="9"/>
+        <text x="758" y="286" class="s" font-size="13" fill="#eaf0ff">🖱️ Клик · «Нажата кнопка Войти»</text>
+      </g>
+
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.82;1" dur="9s" begin="6s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0 8;0 0;0 0;0 8" keyTimes="0;0.12;0.82;1" dur="9s" begin="6s" repeatCount="indefinite"/>
+        <rect class="msg" x="742" y="310" width="360" height="38" rx="9"/>
+        <text x="758" y="334" class="s" font-size="13" fill="#eaf0ff">🔐 Вход · @demo_user</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="66" y="400" class="m" font-size="13" opacity="0.85">IP · браузер · ОС · время · гео (опционально) — метаданные, не пароли</text>
+</svg>

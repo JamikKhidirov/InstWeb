@@ -1,8 +1,31 @@
-# Pixora — страница входа в стиле Instagram
+<p align="center">
+  <img src="docs/assets/architecture-animated.svg" alt="Анимированная архитектура Pixora" width="100%">
+</p>
 
-Демонстрационный проект: **React-страница входа и регистрации**, сделанная в визуальном стиле Instagram, но под собственным брендом **Pixora**. С настоящей авторизацией (bcrypt + JWT) и уведомлениями в Telegram о входах и регистрациях.
+<h1 align="center">Pixora</h1>
 
-> **Важно.** Это не клон Instagram и не фишинговая страница. Бренд, логотип и домен — свои, пароли хешируются и **никогда не покидают сервер**. В Telegram уходят только метаданные события (логин, email, время, IP, браузер). Проект не связан с Instagram или Meta.
+<p align="center">
+  <b>Демо-страница входа</b> под собственным брендом: React 18 + Express + Telegram + VPS.<br/>
+  Только экран входа — без Facebook, App Store и Google Play.
+</p>
+
+<p align="center">
+  <img alt="React" src="https://img.shields.io/badge/React-18-61dafb?style=for-the-badge&logo=react&logoColor=white">
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-5-646cff?style=for-the-badge&logo=vite&logoColor=white">
+  <img alt="Express" src="https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white">
+  <img alt="Node" src="https://img.shields.io/badge/Node.js-22-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+  <img alt="nginx" src="https://img.shields.io/badge/nginx-1.24-009639?style=for-the-badge&logo=nginx&logoColor=white">
+  <img alt="Telegram" src="https://img.shields.io/badge/Telegram-Bot%20API-26a5e4?style=for-the-badge&logo=telegram&logoColor=white">
+</p>
+
+<p align="center">
+  <a href="docs/README.md">📚 Документация</a> ·
+  <a href="docs/09-animated-architecture.md">🎬 Анимированная архитектура</a> ·
+  <a href="docs/08-vps-full-guide.md">🛠️ Деплой на VPS</a> ·
+  <a href="RESULT.md">✅ Итог</a>
+</p>
+
+> **Важно.** Это не клон Instagram и не фишинговая страница. Бренд, логотип и домен — свои, пароли хешируются и **никогда не покидают сервер**. В Telegram уходят только метаданные событий (визит, клик, вход, время, IP, браузер). Проект не связан с Instagram или Meta.
 
 ---
 
@@ -193,6 +216,7 @@ npm start
 
 | Файл | О чём |
 |---|---|
+| [docs/README.md](docs/README.md) | **Анимированный хаб документации:** схемы, быстрый старт, навигация |
 | [docs/01-local-start.md](docs/01-local-start.md) | Подробный локальный запуск: установка Node, `.env`, проверка, типичные ошибки |
 | [docs/02-vps-deploy.md](docs/02-vps-deploy.md) | VPS с нуля: SSH, пользователь, firewall, Node, systemd, nginx |
 | [docs/03-domain-https.md](docs/03-domain-https.md) | Домен, DNS, HTTPS через Let's Encrypt, автопродление |
